@@ -1,0 +1,276 @@
+@use "./base/base";
+@use "./base/reset";
+@use "./global" as *;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 80px 0;
+  display: flex;
+  justify-content: space-between;
+  @include mq("md"){
+    padding: 18px 10px 0;
+  }
+}
+
+.header__logo {
+  width: 149px;
+  aspect-ratio: 149 / 26;
+  @include mq("md"){
+    width: 103px;
+  }
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item:not(:first-child) {
+  margin-left: 60px;
+  @include mq("md"){
+    margin-left: 20px;
+  }
+}
+
+.header__link {
+    font-size: 18px;
+    font-weight:$medium;
+    color:$white;
+    @include mq("md"){
+      font-size: 14px;
+    }
+}
+
+//FV
+.fv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 15px 0;
+  background-image:url(../images/fv-img.jpg);
+  aspect-ratio: 1440 / 760;
+  background-size: contain;
+  @include mq("md"){
+    background-image: url(../images/fv-img-sp.jpg);
+    aspect-ratio: 375 / 620;
+  }
+}
+
+.fv__title {
+  font-size: 80px;
+  color: $white;
+  font-family: $second-font;
+  @include mq("md"){
+    font-size: 55px;
+  }
+}
+
+.fv__list {
+  display: flex;
+  margin-top: 40px;
+  @include mq("md"){
+    margin-top: 20px;
+  }
+}
+
+.fv__item {
+  position: relative;
+}
+
+.fv__item:not(:first-child) {
+  margin-left: 30px;
+  @include mq("md"){
+    margin-left: 13.5px;
+  }
+
+}
+
+.fv__menu-img {
+  width: 240px;
+  aspect-ratio: 1 / 1;
+  border-radius: 9999px;
+  @include mq("lg"){
+    width: 160px;
+  }
+  @include mq("md"){
+    width: 106px;
+  }
+}
+
+.fv__menu-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
+  color: $white;
+  font-weight: $bold;
+  @include mq("md"){
+    font-size: 14px;
+  }
+}
+
+//Location
+.location {
+  padding: 100px 0;
+  background-color: $light-blue;
+  @include mq("md"){
+    padding: 80px 0 94px;
+  }
+}
+
+.location__inner {
+  max-width: 520px;
+  padding: 0 10px;
+  margin-inline: auto;
+}
+
+.location__title {
+
+}
+
+.location__box {
+  margin-top: 40px;
+  padding: 50px 20px;
+  background-image: url(../images/location-img.jpg);
+  background-size: cover;
+  @include mq("md"){
+    margin-top: 20px;
+    padding: 40px 20px;
+    background-image: url(../images/location-img-sp.jpg);
+  }
+}
+
+.location__text {
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: $medium;
+  color:$white;
+  text-align: center;
+}
+
+.location__button {
+  font-size: 18px;
+  font-weight: $bold;
+  line-height: 1.556;
+  color: $white;
+  text-align: center;
+
+  width: 300px;
+  border-radius: 9999px;
+  background-color: $orange;
+  display: block;
+  padding: 16px 12px;
+  margin-top: 12px;
+  margin-inline: auto;
+  @include mq("md"){
+    font-size: 14px;
+    width: 214px;
+    padding: 10px 12px;
+  }
+}
+
+//About
+.about {
+  padding: 100px 0 80px;
+  background-color: $gray;
+  @include mq("md"){
+    padding: 80px 0;
+  }
+}
+
+.about__inner {
+  max-width: 960px;
+  margin-inline: auto;
+  padding: 0 30px;
+}
+
+.about__group {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+  @include mq("md"){
+    flex-direction: column-reverse;
+    margin-top: 20px;
+  }
+}
+
+.about__img {
+  width: 44.4%;
+  aspect-ratio:400 / 300;
+  @include mq("md"){
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.about__text-group {
+  margin-left: 30px;
+  @include mq("md"){
+    margin-left: 0;
+  }
+}
+
+.about__sub-title {
+  font-size: 24px;
+  font-weight: $medium;
+  color: $black;
+}
+
+.about__text {
+  margin-top: 30px;
+  @include mq("md"){
+    margin-top: 20px;
+  }
+}
+
+.about__comment {
+  margin-top: 30px;
+  @include mq("md"){
+    margin-top: 20px;
+  }
+}
+
+.footer {
+  padding: 30px 0;
+  background-color: $dark-blue;
+  @include mq("md"){
+    padding: 20px 0;
+  }
+}
+
+.footer__copyright {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+  color:$white;
+  @include mq("md"){
+    font-size: 12px;
+  }
+}
+
+
+
+.title {
+  font-size: 80px;
+  font-family: $second-font;
+  color: $dark-blue;
+  text-align: center;
+  @include mq("md"){
+    font-size: 55px;
+  }
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: $medium;
+  color: $black;
+  @include mq("md"){
+    font-size: 14px;
+  }
+}
