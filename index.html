@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>ExciteCode | 美味しいハンバーガーとシェイクで東北のみんなを笑顔にします</title>
+  <meta name="description" content="ExciteCodeは、フードトラックで東北各地を周ってハンバーガーを提供しています。食材はすべて、東北地方各地の酪農家さんや農家さんからの直送で東北ならではの美味しさをお楽しみいただけます。" />
+  <!-- ogp -->
+  <meta property="og:title" content="ExciteCode | 美味しいハンバーガーとシェイクで東北のみんなを笑顔にします" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://hogehoge.com/" />
+  <meta property="og:image" content="http://hogehoge.com/images/ogp-img.jpg" />
+  <meta property="og:site_name" content="ExciteCode" />
+  <meta property="og:description" content="ExciteCodeは、フードトラックで東北各地を周ってハンバーガーを提供しています。食材はすべて、東北地方各地の酪農家さんや農家さんからの直送で東北ならではの美味しさをお楽しみいただけます。" />
+  <meta name="twitter:card" content="summary" />
+  <!-- ファビコン -->
+  <link rel="icon" href="#" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <!-- ファーストビューの背景画像を先に読み込む -->
+  <link rel="preload" as="image" href="./images/fv-img.jpg">
+  <link rel="preload" as="image" href="./images/fv-img-sp.jpg">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">
+      <img src="./images/logo.svg" alt="ExciteCode" class="header__logo" loading="lazy">
+    </h1>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#location" class="header__link">Location</a>
+        </li>
+        <li class="header__item">
+          <a href="#about" class="header__link">About Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="fv">
+     <p class="fv__title">Welcome!</p>
+     <ul class="fv__list">
+      <li class="fv__item">
+        <img src="./images/hamburger-img.jpg" alt="トマトやレタスなどの野菜とチーズが挟まっているハンバーガー" class="fv__menu-img" loading="lazy">
+        <p class="fv__menu-text">hamburger</p>
+      </li>
+      <li class="fv__item">
+        <img src="./images/fried-potato-img.jpg" alt="ケチャップとサワークリームとフライドポテト" class="fv__menu-img" loading="lazy">
+        <p class="fv__menu-text">fried potato</p>
+      </li>
+      <li class="fv__item">
+        <img src="./images/milkshake-img.jpg" alt="クッキーとクリームがのっているミルクシェイク" class="fv__menu-img" loading="lazy">
+        <p class="fv__menu-text">milkshake</p>
+      </li>
+     </ul>
+    </div>
+    <!--Location-->
+    <section id="location" class="location">
+      <div class="location__inner">
+        <h2 class="location__title title">Location</h2>
+          <div class="location__box">
+            <p class="location__text">
+              東北地方を中心に道の駅や色んなイベントに<br>
+              移動出店しています。<br>
+              場所とスケジュールはこちらから<br>
+              ご確認ください。</p>
+            <a href="#" class="location__button">詳しくはコチラ</a>
+          </div>
+      </div>
+    </section>
+    <!--About-->
+    <section id="about" class="about">
+      <div class="about__inner">
+        <h2 class="about__title title">About me</h2>
+        <div class="about__group">
+          <img src="./images/about-img.jpg" alt="ハンバーガーを笑顔で提供している女性店員" class="about__img" loading="lazy">
+          <div class="about__text-group">
+            <p class="about__sub-title">
+              美味しいハンバーガーとシェイクで<br>
+              みんなを笑顔にしたい！
+            </p>
+            <p class="about__text text">
+              ハンバーガーの本場、アメリカで3年修行。その後オーストラリアで出店。日本でも気軽に美味しいハンバーガーを味わってほしい！と思い2022年からフードトラックで東北各地を周ってます。<br>
+              こだわりの手作りバンス、ビーフ100％のジューシーなパティ、オリジナルのソース。<br>
+              大きな口でガブッとお召し上がりください！
+            </p>
+          </div>
+        </div>
+        <p class="about__comment">
+          日々心をこめたハンバーガー作りを行っていますが、それができるのは思いを形にする「食材」があるからです。食材はすべて、東北地方各地の酪農家さんや農家さんからの直送。旬のおいしさを楽しんでいただけるよう、食材を作る農家さんの思いも汲み取って心をこめてハンバーガーを作っています。ハンバーガーを通して地元の食材の素晴らしさをお伝えできるよう励んでいます。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small class="footer__copyright">&copy;2023 ExciteCode inc.</small>
+  </footer>
+
+</body>
+
+</html>
